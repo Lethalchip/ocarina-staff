@@ -25,11 +25,13 @@
 				Mousetrap.bind('down', function() { $("ul#ctl > li.CDown").click(); return false; });
 				Mousetrap.bind('a', function() { $("ul#ctl > li.A").click(); return false; });
 				Mousetrap.bind('backspace', function() { $("li#pop").click(); return false; });
+				Mousetrap.bind('escape', function() { $("li#nuke").click(); return false; });
 			});
 		</script>
 		<style>
 			ul#staff {
 				background-image: url(Staff.svg);
+				background-color: #FFFFFF;
 				background-size: contain;
 				width: 43.32em;
 				height: 10.83em;
@@ -55,7 +57,8 @@
 				padding: 0;
 
 				cursor: pointer;
-				color: blue;
+				color: #0050ac;
+				font-weight: bold;
 				text-decoration: underline;
 			}
 
@@ -75,11 +78,23 @@
 			ul#ctl > li {
 				vertical-align: middle;
 			}
+			
+			body {
+				background-color: #313338;
+			}
+
+			p {
+				color:#bbbbbb;
+			}
+			p a {
+				color: #0050ac;
+				font-weight: bold;
+			}
 		</style>
 	</head>
 	<body>
 		<ul id="staff"></ul>
-		<p>Click on the buttons below:</p>
+		<p><b>Click on the buttons below:</b></p>
 		<ul id="ctl">
 			<li id="nuke">Start Over</li>
 			<li id="pop">Erase Last</li>
@@ -89,7 +104,11 @@
 			<li class="CRight"></li>
 			<li class="CDown"></li>
 		</ul>
-		<p>Or use keyboard shortcuts: backspace, A, arrow keys.</p>
-		<footer><p><small>Proof of concept. Use at your own risk.</small></p></footer>
+		<p><b>Or use keyboard shortcuts:</b></p>
+		<p>* Escape - start over</p>
+		<p>* Backspace - erase last</p>
+		<p>* A - "A" note</p>
+		<p>* Arrow keys - arrow note</p><br /><br />
+		<footer><p><small>Proof of concept. Use at your own risk.</small></p><p><small>Colors and hotkeys have been tweaked. Original is made by Romain "Artefact2" Dal Maso - found <a href="https://gitlab.com/artefact2/ocarina-staff">here</a>.</small></p></footer>
 	</body>
 </html>
