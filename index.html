@@ -15,6 +15,24 @@
 					$("ul#staff > li:last-child").remove();
 				});
 
+				$("a#frog").click(function() {
+					$("ul#staff").empty();
+					$("ul#ctl > li.A").click();
+					$("ul#ctl > li.CLeft").click();
+					$("ul#ctl > li.CRight").click();
+					$("ul#ctl > li.CDown").click();
+					$("ul#ctl > li.CLeft").click();
+					$("ul#ctl > li.CRight").click();
+					$("ul#ctl > li.CDown").click();
+					$("ul#ctl > li.A").click();
+					$("ul#ctl > li.CDown").click();
+					$("ul#ctl > li.A").click();
+					$("ul#ctl > li.CDown").click();	
+					$("ul#ctl > li.CRight").click();
+					$("ul#ctl > li.CLeft").click();
+					$("ul#ctl > li.A").click();		
+				});
+
 				$("ul#ctl > li.A, ul#ctl > li.CUp, ul#ctl > li.CLeft, ul#ctl > li.CRight, ul#ctl > li.CDown").click(function() {
 					$("ul#staff").append($(this).clone());
 				});
@@ -31,16 +49,18 @@
 		<style>
 			ul#staff {
 				background-image: url(Staff.svg);
+				background-size: 100%;
+				background-position: center -2.5em;
 				background-color: #FFFFFF;
-				background-size: contain;
-				width: 43.32em;
-				height: 10.83em;
+				width: 55em;
+				height: 12em;
 				position: relative;
 			}
 
 			ul#staff > li {
 				position: relative;
 				margin-right: -0.35em;
+				margin-top: 7.5px;
 			}
 
 			ul#staff > li:first-child { margin-left: 8.5em; }
@@ -108,7 +128,8 @@
 		<p>* Escape - start over</p>
 		<p>* Backspace - erase last</p>
 		<p>* A - "A" note</p>
-		<p>* Arrow keys - arrow note</p><br /><br />
+		<p>* Arrow keys - arrow note</p><br />
+		<p><b>Bonus -> </b><a id="frog" href="#">click here for frog song</a></p><br />
 		<footer><p><small>Proof of concept. Use at your own risk.</small></p><p><small>Colors and hotkeys have been tweaked. Original is made by Romain "Artefact2" Dal Maso - found <a href="https://gitlab.com/artefact2/ocarina-staff">here</a>.</small></p></footer>
 	</body>
 </html>
