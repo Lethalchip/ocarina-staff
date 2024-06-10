@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg908"
+   version="1.1"
+   viewBox="0 0 68.328812 67.84153"
+   height="67.84153mm"
+   width="68.328812mm">
+  <defs
+     id="defs902">
+    <filter
+       height="1.1032"
+       y="-0.051600002"
+       width="1.1032"
+       x="-0.051600002"
+       id="filter1352-9-2"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1354-3-6"
+         stdDeviation="4.9970926" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata905">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-17.996314,-69.555424)"
+     id="layer1">
+    <g
+       transform="matrix(0.26458333,0,0,0.26458333,-356.80413,-38.90225)"
+       id="g1400-0">
+      <g
+         transform="translate(333.18546,-2.1490255)"
+         id="g1359-6-6">
+        <circle
+           r="116.21146"
+           cy="540.27228"
+           cx="1213.4293"
+           id="path849-0-0-9"
+           style="opacity:1;fill:#000000;fill-opacity:0.78801838;fill-rule:nonzero;stroke:none;stroke-width:19.99999809;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.21198156;paint-order:markers stroke fill;filter:url(#filter1352-9-2)" />
+        <circle
+           r="114.36684"
+           cy="527.35992"
+           cx="1197.75"
+           id="path849-6-6"
+           style="opacity:1;fill:#4f93fa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:20;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.21198156;paint-order:markers stroke fill" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.19281197px;line-height:0px;font-family:'Kaushan Script';-inkscape-font-specification:'Kaushan Script';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="1530.9858"
+         y="600.41266"
+         id="text1393-8"><tspan
+           id="tspan1391-0"
+           x="1530.9858"
+           y="600.41266"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-condensed;font-size:206.31375122px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed';text-align:center;text-anchor:middle;stroke-width:1px">A</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ocarina Staff</title>
+		<meta charset="utf-8" />
+		<script src="mousetrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+		<script>
+			$(function() {
+				$("li#nuke").click(function() {
+					$("ul#staff").empty();
+				});
+
+				$("li#pop").click(function() {
+					$("ul#staff > li:last-child").remove();
+				});
+
+				$("ul#ctl > li.A, ul#ctl > li.CUp, ul#ctl > li.CLeft, ul#ctl > li.CRight, ul#ctl > li.CDown").click(function() {
+					$("ul#staff").append($(this).clone());
+				});
+
+				Mousetrap.bind('up', function() { $("ul#ctl > li.CUp").click(); return false; });
+				Mousetrap.bind('left', function() { $("ul#ctl > li.CLeft").click(); return false; });
+				Mousetrap.bind('right', function() { $("ul#ctl > li.CRight").click(); return false; });
+				Mousetrap.bind('down', function() { $("ul#ctl > li.CDown").click(); return false; });
+				Mousetrap.bind('a', function() { $("ul#ctl > li.A").click(); return false; });
+				Mousetrap.bind('backspace', function() { $("li#pop").click(); return false; });
+			});
+		</script>
+		<style>
+			ul#staff {
+				background-image: url(Staff.svg);
+				background-size: contain;
+				width: 43.32em;
+				height: 10.83em;
+				position: relative;
+			}
+
+			ul#staff > li {
+				position: relative;
+				margin-right: -0.35em;
+			}
+
+			ul#staff > li:first-child { margin-left: 8.5em; }
+			ul#staff > li.A { top: 7em; }
+			ul#staff > li.CUp { top: 3.5em; }
+			ul#staff > li.CLeft { top: 4.3em; }
+			ul#staff > li.CRight { top: 5.2em; }
+			ul#staff > li.CDown { top: 6.2em; }
+
+			ul > li {
+				list-style-type: none;
+				display: inline-block;
+				margin: 1em;
+				padding: 0;
+
+				cursor: pointer;
+				color: blue;
+				text-decoration: underline;
+			}
+
+			li.A, li.CUp, li.CLeft, li.CRight, li.CDown {
+				background-size: contain;
+				width: 2.40em;
+				height: 2.42em;
+				display: inline-block;
+			}
+
+			li.A { background-image: url(A.svg); }
+			li.CUp { background-image: url(CUp.svg); }
+			li.CLeft { background-image: url(CLeft.svg); }
+			li.CRight { background-image: url(CRight.svg); }
+			li.CDown { background-image: url(CDown.svg); }
+
+			ul#ctl > li {
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="staff"></ul>
+		<p>Click on the buttons below:</p>
+		<ul id="ctl">
+			<li id="nuke">Start Over</li>
+			<li id="pop">Erase Last</li>
+			<li class="A"></li>
+			<li class="CUp"></li>
+			<li class="CLeft"></li>
+			<li class="CRight"></li>
+			<li class="CDown"></li>
+		</ul>
+		<p>Or use keyboard shortcuts: backspace, A, arrow keys.</p>
+		<footer><p><small>Proof of concept. Use at your own risk.</small></p></footer>
+	</body>
+</html>
